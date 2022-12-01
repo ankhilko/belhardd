@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.timezone import now
+
 
 # Create your models here.
 
@@ -21,10 +23,8 @@ class Category(models.Model):
         unique=True
     )
 
-
     def __str__(self):
         return self.name
-
 
     class Meta:
         verbose_name = 'категория'
@@ -33,8 +33,33 @@ class Category(models.Model):
 
 
 
-class Post:
-    name
-    url
+class Post(models.Model):
+    title = models.CharField(
+        max_length=128,
+        verbose_name='заголовок',
+    )
+    descr = models.TextField(
+        verbose_name='описание'
+    )
+    is_published = models.BooleanField(
+        default=True,
+        verbose_name='публикация',
+    )
+    date_created = models.DateTimeField(
+        default=now,
+        verbose_name='дата создания',
+    )
+    slug = models.SlugField(
+        verbose_name='URL',
+        unique=True,
+    )
+    author = models.CharField(
+        verbose_name='автор',
 
-    pass
+    )
+
+    def __str__(self):
+        return self.title
+
+
+
