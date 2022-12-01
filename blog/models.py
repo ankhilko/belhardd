@@ -68,5 +68,12 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = 'пост'
+        verbose_name_plural = 'посты'
+        db_table = 'blog_posts'
+        ordering = ['date_created']
+
+
 
 
