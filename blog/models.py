@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 from django.utils.timezone import now
 
@@ -53,14 +54,15 @@ class Post(models.Model):
         verbose_name='URL',
         unique=True,
     )
-    author = models.CharField(
-        verbose_name='автор',
-
-    )
     category = models.ForeignKey(
         Category,
         on_delete=models.DO_NOTHING,
         verbose_name='категория',
+    )
+    author = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        verbose_name='автор',
     )
 
     def __str__(self):
