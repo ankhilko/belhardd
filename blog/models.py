@@ -57,6 +57,11 @@ class Post(models.Model):
         verbose_name='автор',
 
     )
+    category = models.ForeignKey(
+        Category,
+        on_delete=models.DO_NOTHING,
+        verbose_name='категория',
+    )
 
     def __str__(self):
         return self.title
