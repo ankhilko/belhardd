@@ -12,6 +12,30 @@ def make_published(self, request, queryset):
 def make_unpublished(self, request, queryset):
     queryset.update(is_published=False)
 
+
+class ManagerPanel(admin.AdminSite):
+    site_header = 'Администрирование DJANGO для менеджеров'
+    site_title = 'DJANGO для менеджеров'           # название на вкладке
+    index_title = 'Управление сайтом'
+    site_url = '/' # куда ведет открытие из панели
+    # enable_nav_sidebar = True
+    # empty_value_display = как отображаются пустые поля во всем сайте
+
+
+manager = ManagerPanel()
+
+
+# class PostInline(admin.TabularInline):
+#     model = Post
+    # fk_name =
+    # verbose_name =                   переодпределить для отображения этого режима
+    # verbose_name_plural =
+
+
+class PostInline(admin.StackedInline):
+    model = Post
+# можно редартировать посты, номенклатуру и т.п.
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     actions_on_top = True
@@ -21,7 +45,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'slug': ('name', )
     }
     actions = (make_published, make_unpublished)
-
+    inlines = (PostInline, )
 
 
 @admin.register(Post)
@@ -69,5 +93,8 @@ class PostAdmin(admin.ModelAdmin):
 # admin.site.register(Category, CategoryAdmin)
 # admin.site.register(Post, PostAdmin)
 
+
+manager.register(Category, CategoryAdmin)
+manager.register(Post, PostAdmin)
 
 
