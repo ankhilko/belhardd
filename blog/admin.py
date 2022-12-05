@@ -22,7 +22,7 @@ class ManagerPanel(admin.AdminSite):
     # empty_value_display = как отображаются пустые поля во всем сайте
 
 
-manager = ManagerPanel()
+manager = ManagerPanel(name='manager')
 
 
 # class PostInline(admin.TabularInline):
