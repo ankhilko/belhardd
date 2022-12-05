@@ -17,7 +17,7 @@ class ManagerPanel(admin.AdminSite):
     site_header = 'Администрирование DJANGO для менеджеров'
     site_title = 'DJANGO для менеджеров'           # название на вкладке
     index_title = 'Управление сайтом'
-    site_url = '/' # куда ведет открытие из панели
+    site_url = 'manager/' # куда ведет открытие из панели
     # enable_nav_sidebar = True
     # empty_value_display = как отображаются пустые поля во всем сайте
 
