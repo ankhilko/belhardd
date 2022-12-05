@@ -16,7 +16,7 @@ class Category(models.Model):
     )
     is_published = models.BooleanField(
         default=True,
-        verbose_name='публикация',
+        verbose_name='опубликовано',
     )
     slug = models.SlugField(
         verbose_name='URL',
