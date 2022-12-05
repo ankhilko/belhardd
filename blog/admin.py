@@ -50,6 +50,8 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
+    search_fields = ('descr', )
+    search_help_text = f'Поиск по полю "{search_fields[0]}"'
 
     # actions_on_top = True
     # actions_on_bottom = True
