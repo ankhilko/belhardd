@@ -26,7 +26,7 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('id', 'date', 'title', )
     ordering = ('is_published', '-date_created')
     list_display_links = ('id', )
-    list_editable = ('title', )
+    # list_editable = ('title', )
     list_filter = ('is_published', 'date_created', )
     # date_hierarchy = 'date_created'
     # exclude = ['date_created']      нельзя вместе с полями - ошибка
