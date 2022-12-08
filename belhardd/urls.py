@@ -20,7 +20,7 @@ from blog.admin import manager
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('manager/', manager.urls),
-    path('blog/', include('blog/urls.py')) # перенаправляем все приложения в BLOG на файл URLS.PY
+    path('blog/', include('blog.urls')) # перенаправляем все приложения в BLOG на файл URLS.PY
 ]
 
 

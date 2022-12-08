@@ -8,3 +8,7 @@ def blog_list(request: HttpRequest):            #функция представ
     return HttpResponse('<b>Hello</b>')
 
 
+
+def post_detail(request: HttpRequest, post_slug: str):
+    post = Post.objects.get(slug=post_slug)
+    return HttpResponse(f'<br><br>{post.title}<br>')

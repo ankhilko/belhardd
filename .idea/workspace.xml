@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d09350-3a6c-4e20-80a3-6b4212fe1987" name="Changes" comment="starting django&#10;day 2">
-      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+    <list default="true" id="99d09350-3a6c-4e20-80a3-6b4212fe1987" name="Changes" comment="starting django&#10;day 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belhardd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/belhardd/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/belhardd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/belhardd/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../venv/lib/python3.11/site-packages/django/urls/resolvers.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -44,7 +44,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/sanr/PycharmProjects/belhardd/belhardd&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
   <component name="RunManager">
@@ -217,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670263877469</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="starting django&#10;day 2">
+      <created>1670515513383</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670515513383</updated>
+    </task>
+    <task id="LOCAL-00021" summary="starting django&#10;day 3">
+      <created>1670515525355</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670515525355</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +248,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting django&#10;day 1" />
     <MESSAGE value="starting django&#10;day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting django&#10;day 2" />
+    <MESSAGE value="starting django&#10;day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting django&#10;day 3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
