@@ -100,3 +100,4 @@ manager.register(Category, CategoryAdmin)
 manager.register(Post, PostAdmin)
 
 
+
