@@ -24,9 +24,10 @@ SECRET_KEY = 'django-insecure-s4h=sm%0yx@(%xax=ku76r@ihh&a6b3d+37ovxs3j7r*ecv*oe
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False       для работы заглушек 404 и т.д.
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1']
+# только с этих адресов можно будет зайти
 
 # Application definition
 

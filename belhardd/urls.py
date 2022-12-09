@@ -23,4 +23,4 @@ urlpatterns = [
     path('blog/', include('blog.urls')) # перенаправляем все приложения в BLOG на файл URLS.PY
 ]
 
-
+handler404 = 'blog.views.error404'
